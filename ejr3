@@ -1,0 +1,57 @@
+Console.WriteLine("seleecione 1 para suma, 2 para resta, 3 para division, 4 para multiplicacion, 0 para salir");
+
+int selec = int.Parse(Console.ReadLine());
+
+while (selec != 0)
+{
+    Console.WriteLine("ingresar dos valores");
+    double v1 = double.Parse(Console.ReadLine());
+    Console.WriteLine(" ");
+    double v2 = double.Parse(Console.ReadLine());   
+
+    if (selec == 1)
+    {
+        Console.WriteLine("La suma es:" + Suma(v1, v2));
+    }
+
+    if (selec == 2)
+    {
+        Console.WriteLine("la resta es:" + Resta(v1, v2));
+    }
+
+    if (selec == 3)
+    {
+        Console.WriteLine("la division es: " + Division(v1, v2));
+    }
+
+    if (selec == 4)
+    {
+        Console.WriteLine("la multiplicacion es:" + Multiplicacion(v1, v2));
+    }
+
+
+
+
+}
+
+
+double Suma (double v1, double v2)
+{
+    return v1 + v2;
+}
+
+double Resta (double v1, double v2)
+{
+
+    return (v1 - v2); 
+}
+
+double Multiplicacion (double v1, double v2)
+{
+    return (v1 * v2);
+}
+
+double Division(double v1, double v2)
+{
+  return (v1 / v2);
+}
