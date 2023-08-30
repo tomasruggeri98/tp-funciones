@@ -1,0 +1,12 @@
+
+Console.WriteLine("Ingrese su edad:");
+int edad = Convert.ToInt32(Console.ReadLine());
+
+if (edad < 18)
+{
+    Console.WriteLine("¡hola joven!");
+}
+else if (edad >= 18 && edad < 110)
+{
+    Console.WriteLine("¡Hola adulto!");
+}
