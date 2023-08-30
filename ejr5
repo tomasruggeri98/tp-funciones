@@ -1,0 +1,19 @@
+int puntuacion = 0;
+
+while (true)
+{
+    Console.WriteLine("Presione 'M' para marcar un punto o 'S' para salir:");
+    char opcion = Console.ReadKey().KeyChar;
+
+    if (opcion == 'M' || opcion == 'm')
+    {
+        puntuacion++;
+        Console.WriteLine("¡punto marcado! Puntuación actual: " + puntuacion);
+    }
+    else if (opcion == 'S' || opcion == 's')
+    {
+        break;
+    }
+}
+
+//Este programa lo pude resolver con la ayuda de OpenIA.
