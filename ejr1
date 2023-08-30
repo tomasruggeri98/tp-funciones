@@ -1,0 +1,13 @@
+
+    Console.WriteLine("ingresa tu nombre:");
+    string nombre = Console.ReadLine();
+
+    string Saludo = generarSaludo(nombre);
+    Console.WriteLine(Saludo);
+
+
+static string generarSaludo(string nombre)
+{
+    string saludo = "Hola" + nombre;
+    return saludo;
+}
